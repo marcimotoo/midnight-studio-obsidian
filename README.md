@@ -2,11 +2,11 @@
 
 A quiet dark theme for Obsidian, with charcoal surfaces, readable text, and bright **#00FF99** mint accents.
 
-![Midnight Studio in Obsidian: navigation, headings, links, tags, and tasks](screenshots/overview.jpg)
+![Midnight Studio illustrated example: navigation, headings, links, tags, and tasks](images/overview.png)
 
-![Midnight Studio in Obsidian: tables, tip and warning callouts, and JavaScript highlighting](screenshots/details.jpg)
+![Midnight Studio illustrated example: tables, callouts, JavaScript, and syntax color roles](images/details.png)
 
-Actual screenshots from Obsidian 1.14.4, using a demo vault with no community plugins. Code highlighting may vary by language.
+Generated examples using the colors defined in `theme.css`, rather than screenshots of Obsidian. Actual layout and code highlighting may vary with your settings, language, and plugins.
 
 ## Design
 
@@ -30,6 +30,8 @@ Community-directory installation becomes available after the theme is submitted 
 ## Development
 
 Edit `theme.css` to adjust the theme. Install the development dependencies with `npm ci`, then run `npm run lint` to check the CSS using Obsidian's theme-review rules.
+
+To regenerate the illustrative previews on Windows, install Python and Pillow, then run `python scripts/render-previews.py`. The renderer reads the theme palette and uses Windows Segoe UI and Consolas fonts.
 
 To release an update, increment the version in `manifest.json` and `package.json`, add its minimum supported Obsidian version to `versions.json`, and push a matching Git tag without a `v` prefix. The release workflow creates a draft GitHub release with the two required theme files attached. Review and publish the draft before submitting or updating the theme in the directory.
 
