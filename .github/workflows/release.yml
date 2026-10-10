@@ -1,0 +1,26 @@
+name: Release Obsidian theme
+
+on:
+  push:
+    tags:
+      - "[0-9]*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Verify release version
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          node -e 'const m=require("./manifest.json"); if(m.version!==process.env.RELEASE_TAG) throw new Error("Tag must match manifest version");'
+      - name: Create draft release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$RELEASE_TAG" --title "Midnight Studio $RELEASE_TAG" --generate-notes --draft manifest.json theme.css

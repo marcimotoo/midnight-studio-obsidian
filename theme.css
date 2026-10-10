@@ -1,0 +1,179 @@
+/* Midnight Studio 1.0.0
+   Markenakzent: #00ff99. Dunkle, neutrale Flächen und ruhige Nebenbeschriftungen.
+   Keine externen Schriften oder Plugins erforderlich. */
+
+.theme-dark {
+  --midnight-mint: #00ff99;
+  --midnight-mint-soft: #83dbb8;
+
+  /* Vollständige Grundpalette für Oberfläche, Dialoge und Menüs. */
+  --color-base-00: #191d1c;
+  --color-base-05: #1d2220;
+  --color-base-10: #212624;
+  --color-base-20: #272d2a;
+  --color-base-25: #2d3430;
+  --color-base-30: #343c37;
+  --color-base-35: #404942;
+  --color-base-40: #535e56;
+  --color-base-50: #727d75;
+  --color-base-60: #9ca69f;
+  --color-base-70: #bcc5bf;
+  --color-base-100: #e0e6e2;
+  --accent-h: 156;
+  --accent-s: 100%;
+  --accent-l: 50%;
+  --color-accent: var(--midnight-mint);
+  --color-accent-1: #46e9a8;
+  --color-accent-2: #83efc1;
+  --background-primary: #191d1c;
+  --background-primary-alt: #212624;
+  --background-secondary: #151917;
+  --background-secondary-alt: #1b201d;
+  --background-modifier-hover: #ffffff06;
+  --background-modifier-active-hover: #00ff9914;
+  --background-modifier-border: #303833;
+  --background-modifier-border-hover: #465149;
+  --background-modifier-border-focus: #00ff9973;
+  --background-modifier-form-field: #151917;
+  --background-modifier-message: #272d2a;
+  --text-normal: #d7dfd9;
+  --text-muted: #a0aca4;
+  --text-faint: #7f8c83;
+  --text-accent: var(--midnight-mint-soft);
+  --text-accent-hover: var(--midnight-mint);
+  --text-on-accent: #10251b;
+  --text-on-accent-inverted: #10251b;
+  --text-selection: #00ff9926;
+  --text-highlight-bg: #00ff9920;
+  --caret-color: var(--midnight-mint);
+  --interactive-normal: #272e29;
+  --interactive-hover: #343d36;
+  --interactive-accent: var(--midnight-mint);
+  --interactive-accent-hover: #46e9a8;
+
+  /* Statusfarben bleiben unterscheidbar und weniger gesättigt als der Markenakzent. */
+  --color-red: #df8790;
+  --color-orange: #d7ab7c;
+  --color-yellow: #d8c78d;
+  --color-green: #88cbaa;
+  --color-cyan: #8bc6cb;
+  --color-blue: #94b9dd;
+  --color-purple: #b8a5d5;
+  --color-pink: #d8a1bc;
+  --text-success: #88cbaa;
+  --text-warning: #d8c78d;
+  --text-error: #df8790;
+
+  /* Schriftfamilien und Schriftgröße bleiben in Obsidian einstellbar. */
+  --line-height-normal: 1.65;
+  --file-line-width: 760px;
+  --h1-color: #edf2ee;
+  --h2-color: #e0e8e2;
+  --h3-color: #d7e1da;
+  --h4-color: #c8d6cd;
+  --h5-color: #b9c9bf;
+  --h6-color: #aabeb1;
+  --h1-weight: 650;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --inline-title-color: #edf2ee;
+  --inline-title-weight: 650;
+  --bold-color: #e8eee9;
+  --italic-color: #bfcec4;
+  --link-color: var(--midnight-mint-soft);
+  --link-color-hover: var(--midnight-mint);
+  --link-external-color: #9fcbbb;
+  --link-external-color-hover: var(--midnight-mint);
+  --link-unresolved-color: #8fab9c;
+  --titlebar-background: #151917;
+  --titlebar-background-focused: #151917;
+  --ribbon-background: #151917;
+  --ribbon-background-collapsed: #151917;
+  --tab-container-background: #151917;
+  --tab-background-active: #191d1c;
+  --tab-text-color: #95a39a;
+  --tab-text-color-active: #d7dfd9;
+  --tab-text-color-focused-active: #e4ece6;
+  --tab-outline-color: #303833;
+  --tab-radius: 5px;
+  --tab-radius-active: 5px;
+  --nav-item-color: #a7b3aa;
+  --nav-item-color-hover: #e0e7e1;
+  --nav-item-color-active: #c0ead6;
+  --nav-item-background-active: #00ff990e;
+  --nav-item-background-hover: #ffffff06;
+  --nav-item-radius: 4px;
+  --nav-heading-color: #bac7be;
+  --icon-color: #95a39a;
+  --icon-color-hover: #d7dfd9;
+  --icon-color-active: var(--midnight-mint-soft);
+  --icon-color-focused: var(--midnight-mint);
+  --tag-color: #95d5b8;
+  --tag-color-hover: var(--midnight-mint);
+  --tag-background: #00ff990b;
+  --tag-background-hover: #00ff9917;
+  --tag-border-color: #00ff9926;
+  --tag-border-color-hover: #00ff994d;
+  --tag-border-width: 1px;
+  --tag-radius: 4px;
+  --code-background: #141816;
+  --code-normal: #c7d5cb;
+  --code-comment: #8a9b8f;
+  --code-keyword: #9cd6bb;
+  --code-function: #d6c698;
+  --code-string: #adcba5;
+  --code-value: #c5b4d8;
+  --code-property: #a8c6ce;
+  --code-operator: #adbab1;
+  --code-important: #d8a1bc;
+  --code-radius: 5px;
+  --table-border-color: #303833;
+  --table-header-background: #222923;
+  --table-header-color: #d3dfd6;
+  --table-row-alt-background: #ffffff03;
+  --blockquote-border-color: #56876e;
+  --blockquote-border-thickness: 2px;
+  --blockquote-color: #b3c2b9;
+  --callout-radius: 5px;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.2;
+  --callout-background-opacity: 0.06;
+  --checkbox-color: var(--midnight-mint);
+  --checkbox-color-hover: #46e9a8;
+  --checkbox-marker-color: #10251b;
+  --checkbox-border-color: #586b5e;
+  --checkbox-radius: 3px;
+  --checklist-done-color: #88988e;
+  --hr-color: #303833;
+  --divider-color: #303833;
+  --scrollbar-thumb-bg: #ffffff15;
+  --scrollbar-active-thumb-bg: #ffffff2b;
+  --slider-thumb-border-color: #46604f;
+  --graph-line: #344a3d;
+  --graph-node: #a3b5a9;
+  --graph-node-focused: var(--midnight-mint);
+  --graph-node-tag: #83b79b;
+  --graph-node-unresolved: #687b6e;
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --input-radius: 5px;
+}
+
+/* Ein kleiner Markenstrich, statt den ganzen Tab neonfarben zu machen. */
+.theme-dark .workspace-tab-header.is-active {
+  box-shadow: inset 0 2px 0 #00ff99;
+}
+
+.theme-dark .nav-file-title.is-active {
+  box-shadow: inset 2px 0 0 #00ff9973;
+}
+
+.theme-dark .markdown-rendered :not(pre) > code {
+  color: #a4d9bf;
+}
+
+/* Tags und Callouts bleiben flach; kein Leuchteffekt. */
+.theme-dark .markdown-rendered .callout {
+  box-shadow: none;
+}
