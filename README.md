@@ -2,6 +2,12 @@
 
 A quiet dark theme for Obsidian, with charcoal surfaces, readable text, and bright **#00FF99** mint accents.
 
+![Midnight Studio in Obsidian: navigation, headings, links, tags, and tasks](screenshots/overview.jpg)
+
+![Midnight Studio in Obsidian: tables, tip and warning callouts, and JavaScript highlighting](screenshots/details.jpg)
+
+Actual screenshots from Obsidian 1.14.4, using a demo vault with no community plugins. Code highlighting may vary by language.
+
 ## Design
 
 - Subtle accents for active tabs, selected files, links, and checkboxes.
