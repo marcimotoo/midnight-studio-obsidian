@@ -8,7 +8,7 @@ A quiet dark theme for Obsidian, with charcoal surfaces, readable text, and brig
 
 Generated examples using the colors defined in `theme.css`, rather than screenshots of Obsidian. Actual layout and code highlighting may vary with your settings, language, and plugins.
 
-An [actual screenshot from the demo vault](images/community-screenshot.jpg) is available separately for the community-directory listing.
+An [actual screenshot from the demo vault](images/community-screenshot.png) is available separately for the community-directory listing.
 
 ## Design
 
