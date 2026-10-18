@@ -8,6 +8,8 @@ A quiet dark theme for Obsidian, with charcoal surfaces, readable text, and brig
 
 Generated examples using the colors defined in `theme.css`, rather than screenshots of Obsidian. Actual layout and code highlighting may vary with your settings, language, and plugins.
 
+An [actual screenshot from the demo vault](images/community-screenshot.jpg) is available separately for the community-directory listing.
+
 ## Design
 
 - Subtle accents for active tabs, selected files, links, and checkboxes.
@@ -37,7 +39,7 @@ To release an update, increment the version in `manifest.json` and `package.json
 
 ## Feedback
 
-Report issues or suggest improvements in [GitHub Issues](https://github.com/marcimotoo/midnight-theme-obsidian/issues). Include your Obsidian version and a screenshot where useful. Remove private note content before sharing screenshots.
+Report issues or suggest improvements in [GitHub Issues](https://github.com/marcimotoo/midnight-studio-obsidian/issues). Include your Obsidian version and a screenshot where useful. Remove private note content before sharing screenshots.
 
 ## License
 
